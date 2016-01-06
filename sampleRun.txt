@@ -1,0 +1,71 @@
+*** THIS CODE SOLVES 1D FEM PROBLEM ***
+ 
+The linear domain for the problem is defined with two end coordinates as x=0 and x=L
+ 
+Give the value of L : 10
+ 
+***Polynomial functions for EA***
+ 
+Enter the number of times EA(x) changes its form inside the domain (0,10): nEA = 1
+ 
+Enter the coordinate x of the last point of segment no. 1 starting from x=0 : 4
+Enter the expression for EA(x) in terms of x between x=0 and x=4 = 2*x+5
+ 
+Enter the expression for EA(x) in terms of x between x=4 and x=10 = 8
+ 
+***Polynomial functions for f***
+ 
+Enter the number of times f(x) changes its form inside the domain (0,10): nf = 0
+ 
+Enter the expression for f(x) in terms of x between x=0 and x=10 = 3.5*x^2 - 9
+ 
+***Details of Point Loads***
+ 
+Enter the number of Point loads inside the domain (0,10): nP = 2
+ 
+Enter the coordinate x of the point load :4
+Enter the value of the point load at x=4 : -5
+ 
+Enter the coordinate x of the point load :9
+Enter the value of the point load at x=9 : 15
+ 
+***Boundary Conditions***
+ 
+Three types of boundary conditions:
+1. Dirichlet Condition- Value of displacement u is given. (Positive u in positive direction i.e. toward 0 to L)
+2. Neumann Condition- Value of force F is given. (Force pointing outwards from inside the domain is positive
+3. Robin Condition- F as a function of u is given. (Only linear functions of u considered i.e. spring.
+   Values to be provided in this case is spring constant k and pre-compression delta
+ 
+Enter the type of B.C. at x=0 : (1/2/3) 1
+Enter the type of B.C. at x=L : (1/2/3) 2
+ 
+Enter the value of u(0) = 0
+ 
+Enter the value of F(L) = -10
+ 
+Number of segments in the domain = 3
+ 
+Enter the value of number of elements n and the order of approximation p (<=5) for each segment
+ 
+For segment no. 1 between x=0 and x=4 : 
+n1 = 4
+p1 = 2
+ 
+For segment no. 2 between x=4 and x=9 : 
+n2 = 5
+p2 = 5
+ 
+For segment no. 3 between x=9 and x=10 : 
+n3 = 2
+p3 = 3
+ 
+ 
+*** Comparitive study can be made between exact and finite element soluiton if the exact solution is known. ***
+Is the exact solution to this problem known? [Y/N] : n
+ 
+Do you want the plot of u(x) ? [Y/N] : y
+ 
+Do you want the plot of du(x)/dx ? [Y/N] : y
+ 
+Do you want the plot of r(x) ? [Y/N] : n
