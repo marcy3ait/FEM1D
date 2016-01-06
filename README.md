@@ -1,7 +1,9 @@
 # FEM1D
 
+
 ### Instructions
 Execute the FEM1D.m file and follow the command line prompts.
+
 
 ### Description
 The code was developed as part of the course project for my elective undergrad course "AE675: Introduction to Finite Element Methods" in Spring 2011.
